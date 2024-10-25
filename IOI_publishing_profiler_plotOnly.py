@@ -60,6 +60,11 @@ def load_data_csv(link, header):
    df = pd.read_csv(link, header=header)
    return df
 
+@st.cache_data
+def load_data_parquet(link, header):
+   st.write(f'Loading file **{link}**')
+   df = pd.read_parquet(link)
+   return df
 
 
 ### Load dataframe of merged publications ###

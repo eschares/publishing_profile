@@ -1,0 +1,405 @@
+Publisher,PubYear,DOI
+Elsevier,2019,261
+Elsevier,2018,254
+Elsevier,2017,231
+Elsevier,2020,220
+Elsevier,2016,215
+Elsevier,2021,205
+Elsevier,2022,161
+Elsevier,2023,156
+Wiley,2020,137
+Springer Nature,2019,125
+Wiley,2017,124
+Wiley,2018,122
+Wiley,2019,121
+Springer Nature,2017,118
+Wiley,2021,116
+Wiley,2016,113
+Springer Nature,2021,109
+Springer Nature,2018,101
+American Chemical Society (ACS),2023,94
+Springer Nature,2016,92
+American Chemical Society (ACS),2021,91
+American Chemical Society (ACS),2019,91
+Wiley,2022,89
+Springer Nature,2022,89
+Springer Nature,2020,88
+American Chemical Society (ACS),2022,86
+American Chemical Society (ACS),2020,85
+American Chemical Society (ACS),2017,83
+Wiley,2023,83
+American Chemical Society (ACS),2018,80
+Springer Nature,2023,78
+American Chemical Society (ACS),2016,78
+MDPI,2020,65
+Frontiers,2021,61
+Oxford University Press (OUP),2019,60
+Oxford University Press (OUP),2017,56
+Oxford University Press (OUP),2018,55
+Oxford University Press (OUP),2021,53
+Oxford University Press (OUP),2016,52
+Oxford University Press (OUP),2020,52
+Frontiers,2022,51
+Frontiers,2023,48
+Royal Society of Chemistry (RSC),2016,46
+MDPI,2022,45
+Royal Society of Chemistry (RSC),2017,44
+Frontiers,2020,43
+Oxford University Press (OUP),2022,42
+MDPI,2021,42
+MDPI,2019,41
+Institute of Electrical and Electronics Engineers (IEEE),2021,38
+Oxford University Press (OUP),2023,38
+Institute of Electrical and Electronics Engineers (IEEE),2020,37
+Institute of Electrical and Electronics Engineers (IEEE),2018,36
+Royal Society of Chemistry (RSC),2020,35
+Taylor & Francis,2017,34
+MDPI,2023,33
+Institute of Electrical and Electronics Engineers (IEEE),2022,30
+Royal Society of Chemistry (RSC),2019,30
+Taylor & Francis,2022,30
+Institute of Electrical and Electronics Engineers (IEEE),2023,30
+Royal Society of Chemistry (RSC),2022,30
+Frontiers,2019,30
+Royal Society of Chemistry (RSC),2021,29
+Institute of Electrical and Electronics Engineers (IEEE),2019,29
+Public Library of Science (PLoS),2016,28
+Royal Society of Chemistry (RSC),2018,28
+MDPI,2017,26
+Taylor & Francis,2019,25
+MDPI,2018,25
+Taylor & Francis,2016,24
+Royal Society of Chemistry (RSC),2023,24
+Taylor & Francis,2021,23
+Taylor & Francis,2020,23
+SAGE Publications,2019,22
+Frontiers,2018,22
+Taylor & Francis,2018,21
+Taylor & Francis,2023,20
+Public Library of Science (PLoS),2021,20
+AIP Publishing,2020,19
+Public Library of Science (PLoS),2018,19
+Public Library of Science (PLoS),2017,19
+Institute of Electrical and Electronics Engineers (IEEE),2017,18
+Public Library of Science (PLoS),2020,18
+Public Library of Science (PLoS),2019,17
+SAGE Publications,2020,17
+SAGE Publications,2018,17
+AIP Publishing,2022,16
+Institute of Electrical and Electronics Engineers (IEEE),2016,16
+AIP Publishing,2023,16
+IOP Publishing,2018,14
+Frontiers,2017,14
+AIP Publishing,2021,14
+SAGE Publications,2021,13
+IOP Publishing,2023,12
+AIP Publishing,2019,12
+IOP Publishing,2020,12
+IOP Publishing,2021,12
+SAGE Publications,2022,10
+Public Library of Science (PLoS),2023,10
+American Geophysical Union (AGU),2022,10
+IOP Publishing,2022,10
+IOP Publishing,2016,10
+American Psychological Association (APA),2016,9
+American Society for Microbiology,2021,9
+SAGE Publications,2023,9
+Scientific Societies,2017,9
+American Society for Microbiology,2017,9
+MDPI,2016,9
+AIP Publishing,2018,8
+Frontiers,2016,8
+SAGE Publications,2016,8
+SAGE Publications,2017,8
+American Association for the Advancement of Science (AAAS),2021,8
+Proceedings of the National Academy of Sciences,2022,8
+American Physical Society (APS),2016,7
+American Geophysical Union (AGU),2019,7
+American Society of Civil Engineers (ASCE),2018,7
+IOP Publishing,2019,7
+American Society for Microbiology,2018,7
+American Society for Microbiology,2022,7
+American Society for Microbiology,2023,7
+ASME International,2017,7
+American Astronomical Society,2022,6
+ASME International,2016,6
+Proceedings of the National Academy of Sciences,2020,6
+Proceedings of the National Academy of Sciences,2023,6
+Canadian Science Publishing,2017,6
+Proceedings of the National Academy of Sciences,2017,6
+Public Library of Science (PLoS),2022,6
+American Dairy Science Association,2018,6
+American Society of Civil Engineers (ASCE),2021,6
+American Astronomical Society,2017,5
+Cambridge University Press (CUP),2023,5
+American Society of Civil Engineers (ASCE),2019,5
+American Society of Civil Engineers (ASCE),2016,5
+American Society of Civil Engineers (ASCE),2017,5
+Cambridge University Press (CUP),2022,5
+Cambridge University Press (CUP),2019,5
+Cambridge University Press (CUP),2016,5
+American Dairy Science Association,2020,5
+American Dairy Science Association,2019,5
+Proceedings of the National Academy of Sciences,2021,5
+IOP Publishing,2017,5
+Hindawi,2018,5
+American Geophysical Union (AGU),2020,5
+Scientific Societies,2019,5
+American Geophysical Union (AGU),2016,5
+Scientific Societies,2018,5
+Association for Computing Machinery (ACM),2023,5
+Cambridge University Press (CUP),2018,4
+Proceedings of the National Academy of Sciences,2016,4
+Proceedings of the National Academy of Sciences,2018,4
+American Geophysical Union (AGU),2021,4
+American Dairy Science Association,2016,4
+Scientific Societies,2016,4
+American Society for Microbiology,2016,4
+Proceedings of the National Academy of Sciences,2019,4
+PeerJ,2020,4
+American Psychological Association (APA),2018,4
+Hindawi,2020,4
+De Gruyter,2017,4
+American Society for Microbiology,2020,4
+American Association for the Advancement of Science (AAAS),2019,4
+The Royal Society,2018,4
+American Association for the Advancement of Science (AAAS),2016,3
+The Royal Society,2017,3
+Copernicus Publications,2017,3
+Copernicus Publications,2020,3
+The Royal Society,2023,3
+American Astronomical Society,2021,3
+American Astronomical Society,2020,3
+American Society of Agricultural and Biological Engineers (ASABE),2021,3
+Canadian Science Publishing,2018,3
+American Society of Agricultural and Biological Engineers (ASABE),2019,3
+The Royal Society,2021,3
+Institution of Engineering and Technology (IET),2017,3
+American Society of Civil Engineers (ASCE),2023,3
+American Psychological Association (APA),2017,3
+American Psychological Association (APA),2019,3
+Herpetologists League,2019,3
+Mary Ann Liebert,2017,3
+Copernicus Publications,2016,3
+American Institute of Mathematical Sciences (AIMS),2021,3
+American Geophysical Union (AGU),2018,3
+Scientific Societies,2020,3
+American Dairy Science Association,2017,3
+American Society of Civil Engineers (ASCE),2020,3
+American Society of Civil Engineers (ASCE),2022,3
+World Scientific Publishing,2023,3
+Cambridge University Press (CUP),2021,3
+Cambridge University Press (CUP),2020,3
+Consejo Nacional de Universidades,2016,3
+American Physical Society (APS),2018,3
+American Physical Society (APS),2017,3
+American Physical Society (APS),2020,3
+American Meteorological Society,2019,3
+Emerald,2021,2
+Copernicus Publications,2022,2
+American Society of Agricultural and Biological Engineers (ASABE),2023,2
+Canadian Science Publishing,2023,2
+American Astronomical Society,2019,2
+American Association for the Advancement of Science (AAAS),2023,2
+The Royal Society,2022,2
+American Association for the Advancement of Science (AAAS),2020,2
+Centers for Disease Control and Prevention (CDC),2016,2
+De Gruyter,2022,2
+American Society of Agricultural and Biological Engineers (ASABE),2020,2
+Airiti Press,2018,2
+The Royal Society,2019,2
+The Royal Society,2016,2
+International Union of Crystallography (IUCr),2017,2
+IOS Press,2017,2
+Portland Press,2019,2
+Mary Ann Liebert,2021,2
+Mary Ann Liebert,2018,2
+International Union of Crystallography (IUCr),2023,2
+American Physical Society (APS),2019,2
+American Physiological Society,2020,2
+American Physiological Society,2019,2
+American Physiological Society,2023,2
+Iowa State University,2021,2
+Optica Publishing Group,2021,2
+American Meteorological Society,2022,2
+World Scientific Publishing,2020,2
+Society for the Study of Amphibians and Reptiles,2018,2
+Portland Press,2018,2
+Portland Press,2017,2
+American Physical Society (APS),2021,2
+Karger Publishers,2019,2
+Emerald,2022,2
+American Registry of Professional Animal Scientists,2017,2
+American Vacuum Society,2021,2
+American Psychological Association (APA),2021,2
+American Psychological Association (APA),2020,2
+Hindawi,2021,2
+American Astronomical Society,2016,2
+The Company of Biologists,2023,2
+The Company of Biologists,2018,2
+The American Association of Immunologists,2023,2
+American Dairy Science Association,2021,2
+eLife,2020,2
+Rockefeller University Press,2021,2
+American Geophysical Union (AGU),2023,2
+Scientific Societies,2021,2
+Emerald,2018,2
+American Psychological Association (APA),2023,2
+ASME International,2022,2
+ASME International,2018,2
+Hindawi,2023,2
+Centers for Disease Control and Prevention (CDC),2021,1
+Chelonian Conservation and Biology Journal,2020,1
+Cold Spring Harbor Laboratory,2017,1
+Copernicus Publications,2019,1
+EDP Sciences,2016,1
+De Gruyter,2021,1
+Copernicus Publications,2023,1
+Torrey Botanical Society,2021,1
+The Electrochemical Society,2022,1
+Waterbird Society,2019,1
+American Association of Avian Pathologists (AAAP),2021,1
+American Association for the Advancement of Science (AAAS),2017,1
+American Association for Cancer Research (AACR),2021,1
+EDP Sciences,2017,1
+EDP Sciences,2022,1
+Emerald,2023,1
+Global Science Press,2016,1
+GigaScience Press,2022,1
+Chelonian Conservation and Biology Journal,2016,1
+Trans Tech Publications,2019,1
+Ubiquity Press,2020,1
+American Association for the Advancement of Science (AAAS),2022,1
+American Association for the Advancement of Science (AAAS),2018,1
+The Royal Society,2020,1
+ASME International,2019,1
+Airiti Press,2017,1
+The Institute of Brewing & Distilling,2016,1
+Lepidopterists' Society,2023,1
+Life Science Alliance,2022,1
+American Society for Horticultural Science,2016,1
+American Society for Horticultural Science,2017,1
+IOS Press,2020,1
+American Society for Horticultural Science,2018,1
+IWA Publishing,2017,1
+IOS Press,2023,1
+Institution of Engineering and Technology (IET),2019,1
+Institution of Engineering and Technology (IET),2020,1
+Institute of Mathematical Statistics,2022,1
+Institution of Engineering and Technology (IET),2016,1
+International Association for Food Protection,2020,1
+American Vacuum Society,2019,1
+International Union of Crystallography (IUCr),2018,1
+International Press of Boston,2018,1
+American Registry of Professional Animal Scientists,2020,1
+American Society for Cell Biology (ASCB),2017,1
+Association for Computing Machinery (ACM),2021,1
+American Vacuum Society,2022,1
+Annual Reviews,2017,1
+Annual Reviews,2016,1
+Annual Reviews,2019,1
+Annual Reviews,2018,1
+American Society for Cell Biology (ASCB),2018,1
+BMJ,2019,1
+American Society of Plant Taxonomists,2017,1
+American Society of Plant Taxonomists,2016,1
+American Society of Plant Taxonomists,2022,1
+American Vacuum Society,2018,1
+American Society for Clinical Investigation,2021,1
+American Society for Cell Biology (ASCB),2023,1
+American Society for Pharmacology & Experimental Therapeutics (ASPET),2023,1
+Hindawi,2019,1
+American Society of Agricultural and Biological Engineers (ASABE),2017,1
+Hindawi,2017,1
+Environmental Health Perspectives,2021,1
+Emerald,2020,1
+American Society of Hematology,2021,1
+American Psychological Association (APA),2022,1
+F1000Research,2020,1
+Naturalis Biodiversity Center,2019,1
+Natural Areas Journal,2018,1
+Mary Ann Liebert,2019,1
+Mary Ann Liebert,2022,1
+Mary Ann Liebert,2020,1
+Microbiology Society,2021,1
+Microbiology Society,2019,1
+PeerJ,2017,1
+PeerJ,2018,1
+PeerJ,2019,1
+OMICS International,2016,1
+American Meteorological Society,2021,1
+JMIR Publications,2023,1
+Open Exploration Publishing,2023,1
+Karger Publishers,2021,1
+Japan Institute of Metals,2019,1
+Journal of Biological Methods,2016,1
+Kansas Entomological Society,2020,1
+Karger Publishers,2016,1
+Iowa State University,2019,1
+Ivyspring International Publisher,2022,1
+Karger Publishers,2020,1
+Karger Publishers,2018,1
+Beilstein Institut,2019,1
+Bio-Protocol,2023,1
+Bioscientifica,2020,1
+Brill Academic Publishers,2019,1
+Brill Academic Publishers,2023,1
+American Institute of Mathematical Sciences (AIMS),2023,1
+American Mathematical Society (AMS),2023,1
+American Meteorological Society,2017,1
+American Meteorological Society,2020,1
+Resilience Alliance,2018,1
+PeerJ,2021,1
+PeerJ,2022,1
+Physical Society of Japan,2020,1
+PeerJ,2023,1
+Portland Press,2016,1
+Portland Press,2023,1
+American Physiological Society,2022,1
+American Physiological Society,2016,1
+American Physical Society (APS),2023,1
+American Physical Society (APS),2022,1
+Mineralogical Society of America,2019,1
+Microbiology Society,2023,1
+University of California Press,2017,1
+Cold Spring Harbor Laboratory,2023,1
+American Dairy Science Association,2023,1
+American Fern Society,2020,1
+American Geophysical Union (AGU),2017,1
+American Society for Horticultural Science,2020,1
+American Society for Horticultural Science,2019,1
+BMJ,2023,1
+University of Notre Dame,2022,1
+University of Toronto Press,2023,1
+Wolters Kluwer,2023,1
+World Scientific Publishing,2016,1
+World Scientific Publishing,2017,1
+World Scientific Publishing,2019,1
+World Scientific Publishing,2021,1
+Resilience Alliance,2021,1
+Rockefeller University Press,2019,1
+Sciaccess Publishers,2017,1
+American Astronomical Society,2023,1
+Scientific Societies,2022,1
+American Society for Microbiology,2019,1
+eLife,2018,1
+Cambridge University Press (CUP),2017,1
+The American Association of Immunologists,2019,1
+The Electrochemical Society,2021,1
+eLife,2019,1
+Society for the Study of Amphibians and Reptiles,2021,1
+Stichting SciPost,2021,1
+eLife,2022,1
+Wilson Ornithological Society,2018,1
+Wildlife Disease Association,2021,1
+Wildlife Disease Association,2018,1
+Wildlife Disease Association,2017,1
+eLife,2021,1
+American Astronomical Society,2018,1
+eLife,2023,1
+American Association of Physics Teachers (AAPT),2020,1
+American Association of Physics Teachers (AAPT),2019,1
+American Association of Avian Pathologists (AAAP),2023,1
+Wolters Kluwer,2022,1
+Wolters Kluwer,2018,1
+Wolters Kluwer,2016,1
