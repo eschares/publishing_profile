@@ -64,14 +64,14 @@ def load_data_csv(link, header):
 
 ### Load dataframe of merged publications ###
 merged_file_flag = 0
-df_file_picker = glob.glob(f'data/{institution_name_nospaces}/*_merged_small.csv')
+df_file_picker = glob.glob(f'data/{institution_name_nospaces}/*_merged_small.parquet')
 #df_file_picker
 if df_file_picker:
     openalex_file_flag = 1
     if(df_file_picker[0].endswith('.xlsx')):
         merged = load_data_excel(df_file_picker[0], 1)      # df_file_picker is a list, get the 0th element, header=1 if Excel file
     else:
-        merged = load_data_csv(df_file_picker[0], 0)
+        merged = load_data_parquet(df_file_picker[0], 0)
 else:
     st.write('No file found')
 
