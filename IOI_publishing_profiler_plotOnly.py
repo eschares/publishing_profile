@@ -401,7 +401,7 @@ def convert_Funder_string_to_Parent(funder_string: str) -> list:
     Input: Funder cell (Directorate for Computer & Information Science & Engineering; National Cancer Institute)
     Output: List of Parent names (['US National Science Foundation', 'Health and Human Services'])
     """
-    print(f'Checking {funder_string=}')
+    #print(f'Checking {funder_string=}')
     
     result = []
     
@@ -411,7 +411,7 @@ def convert_Funder_string_to_Parent(funder_string: str) -> list:
         #print(parts[i])
         #print(lookup(parts[i]))
         if lookup(parts[i]):
-            print(f'{parts[i]}, parent is {lookup(parts[i])}')
+            #print(f'{parts[i]}, parent is {lookup(parts[i])}')
             result.append(lookup(parts[i]))
     
     return(result)
@@ -476,7 +476,7 @@ chosen_funder_DOIlevel = funders_exploded[funders_exploded['ParentAgency']==chos
 chosen_funder_DOIlevel[['DOI', 'Source title', 'Publisher', 'PubYear', 'Title', 'ISSN', 'Open Access', 'Authors', 'Authors (Raw Affiliation)', 'Corresponding Authors', 'Authors Affiliations', 'Research Organizations - standardized', 'Funder', 'ParentAgency']]
 
 chosenfunder_byjournaltitle = chosen_funder_DOIlevel.groupby(['Source title', 'PubYear', 'Publisher']).count().reset_index()[['Source title', 'PubYear', 'Publisher', 'DOI']]
-chosenfunder_byjournaltitle.sort_values(by='DOI', ascending=False, inplace=True)
+chosenfunder_byjournaltitle.sort_values(by=['DOI', 'PubYear'], ascending=False, inplace=True)
 chosenfunder_byjournaltitle.to_csv(f'data/{institution_name_nospaces}/{institution_name_nospaces}_yesyes_chosenfunder_groupbyjournaltitle.csv', index=False)
 
 fig12 = px.histogram(chosenfunder_byjournaltitle, x='Source title', y='DOI', color='PubYear', text_auto='True',
