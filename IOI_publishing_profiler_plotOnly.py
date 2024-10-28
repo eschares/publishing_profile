@@ -360,18 +360,36 @@ import csv
 
 lookup_data = {}
 
-def load_lookupfile(file_path):
-    with open(file_path, 'r') as f:
-        reader = csv.reader(f)
-        for line in reader:
-            print(line)
-            key, value = (line[0], line[1])
-            lookup_data[key] = value
+# def load_lookupfile(file_path):
+#     with open(file_path, 'r') as f:
+#         reader = csv.reader(f)
+#         for line in reader:
+#             print(line)
+#             key, value = (line[0], line[1])
+#             lookup_data[key] = value
 
 def lookup(key):
     return lookup_data.get(key)
 
-load_lookupfile('Dimensions_USFFGroup_mapped_to_RORs_and_2ndlevel_parent_onlytwocolumns.csv')
+@st.cache_data
+def load_dict_from_csv(file_path, key_column, value_column):
+    """Loads a dictionary from an csv file.
+
+    Args:
+        file_path: The path to the file.
+        key_column: The name of the column to use as keys in the dictionary.
+        value_column: The name of the column to use as values in the dictionary.
+
+    Returns:
+        A dictionary created from the data.
+    """
+
+    dict_df = pd.read_csv(file_path)
+    lookup_data = dict(zip(dict_df[key_column], dict_df[value_column]))
+    return lookup_data
+
+#load_lookupfile('Dimensions_USFFGroup_mapped_to_RORs_and_2ndlevel_parent_onlytwocolumns.csv')
+lookup_data = load_dict_from_csv('Dimensions_USFFGroup_mapped_to_RORs_and_2ndlevel_parent_onlytwocolumns.csv', 'Name_no_parentheses', 'parentName')
 
 def convert_Funder_string_to_Parent(funder_string: str) -> list:
     """
