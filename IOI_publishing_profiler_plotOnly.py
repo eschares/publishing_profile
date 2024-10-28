@@ -476,10 +476,11 @@ chosen_funder_DOIlevel = funders_exploded[funders_exploded['ParentAgency']==chos
 chosen_funder_DOIlevel[['DOI', 'Source title', 'Publisher', 'PubYear', 'Title', 'ISSN', 'Open Access', 'Authors', 'Authors (Raw Affiliation)', 'Corresponding Authors', 'Authors Affiliations', 'Research Organizations - standardized', 'Funder', 'ParentAgency']]
 
 chosenfunder_byjournaltitle = chosen_funder_DOIlevel.groupby(['Source title', 'PubYear', 'Publisher']).count().reset_index()[['Source title', 'PubYear', 'Publisher', 'DOI']]
-chosenfunder_byjournaltitle.sort_values(by=['DOI', 'PubYear'], ascending=False, inplace=True)
+chosenfunder_byjournaltitle.astype({'PubYear':'int32'}).dtypes
+chosenfunder_byjournaltitle.sort_values(by=['PubYear', 'DOI'], ascending=[True,False], inplace=True)
 chosenfunder_byjournaltitle.to_csv(f'data/{institution_name_nospaces}/{institution_name_nospaces}_yesyes_chosenfunder_groupbyjournaltitle.csv', index=False)
 
-fig12 = px.histogram(chosenfunder_byjournaltitle, x='Source title', y='DOI', color='PubYear', text_auto='True',
+fig12 = px.bar(chosenfunder_byjournaltitle, x='Source title', y='DOI', color='PubYear', text_auto='True',
                      title=f'Top Journal Titles with Corresponding Author from {institution_name}<br>and Funding from {chosen_funder}',
                      category_orders={'PubYear': [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]})
 fig12.update_xaxes(categoryorder='total descending', maxallowed=maxallowed)
