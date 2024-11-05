@@ -310,7 +310,7 @@ st.markdown('---')
 st.subheader('Breakdown by **:red[Journal Title]**')
 
 yesyes_byjournaltitle = yesyes.groupby(['Source title', 'PubYear', 'Publisher']).count().reset_index()[['Source title', 'PubYear', 'Publisher', 'DOI']]
-yesyes_byjournaltitle.sort_values(by='DOI', ascending=False, inplace=True)
+yesyes_byjournaltitle.sort_values(by='PubYear', ascending=True, inplace=True)
 yesyes_byjournaltitle.to_csv(f'data/{institution_name_nospaces}/{institution_name_nospaces}_yesyes_groupbyjournaltitle.csv', index=False)
 
 top20_toggle = st.radio('', ['Show only the Top 20 journal titles', 'Show up to 2,000 journal titles'], label_visibility = 'collapsed')
@@ -342,12 +342,26 @@ journal_totals[0:maxallowed]
 st.plotly_chart(fig10)
 
 
-# fig11 = px.histogram(yesyes_byjournaltitle, x='PubYear', y='DOI', color='Source title', text_auto='True', barnorm='percent')
-# fig11.update_xaxes(type='category', categoryorder='category ascending')
-# fig11.update_traces(texttemplate = "%{value:.2f}%")
-# fig11.update_layout(height=1000, showlegend=True)
-# st.plotly_chart(fig11)
-# 
+yesyes_byjournal_and_OA = yesyes.groupby(['Source title', 'PubYear', 'Open Access']).count().reset_index()[['Source title', 'PubYear', 'Open Access', 'DOI']]
+yesyes_byjournal_and_OA.sort_values(by='DOI', ascending=False, inplace=True)
+
+fig13 = px.bar(yesyes_byjournal_and_OA, x='Source title', y='DOI', color='Open Access',
+            category_orders={'Open Access': ["Closed", "All OA; Gold", "All OA; Bronze", "All OA; Green", "All OA; Hybrid"]},
+            color_discrete_map={
+                "Closed": "#AB63FA",
+                "All OA; Gold": "gold",
+                "All OA; Bronze": "#636EFA",
+                "All OA; Green": "#2CA02C",
+                "All OA; Hybrid": "#EF553B"},
+            #pattern_shape='Open Access'
+           title = 'Top Journal Titles with Corresponding Authored USFF Outputs and Open Access status<br>Zoom or pan to see more' )
+
+fig13.update_xaxes(categoryorder = 'total descending', maxallowed=maxallowed)
+fig13.update_layout(height=1000, showlegend=True, legend_traceorder='reversed')
+#fig13.update_traces(dict(marker_line_width=0))
+
+st.plotly_chart(fig13)
+
 
 
 
@@ -476,13 +490,36 @@ chosen_funder_DOIlevel = funders_exploded[funders_exploded['ParentAgency']==chos
 chosen_funder_DOIlevel[['DOI', 'Source title', 'Publisher', 'PubYear', 'Title', 'ISSN', 'Open Access', 'Authors', 'Authors (Raw Affiliation)', 'Corresponding Authors', 'Authors Affiliations', 'Research Organizations - standardized', 'Funder', 'ParentAgency']]
 
 chosenfunder_byjournaltitle = chosen_funder_DOIlevel.groupby(['Source title', 'PubYear', 'Publisher']).count().reset_index()[['Source title', 'PubYear', 'Publisher', 'DOI']]
-chosenfunder_byjournaltitle.astype({'PubYear':'int32'}).dtypes
-chosenfunder_byjournaltitle.sort_values(by=['PubYear', 'DOI'], ascending=[True,False], inplace=True)
+#chosenfunder_byjournaltitle.astype({'PubYear':'int32'}).dtypes
+chosenfunder_byjournaltitle.sort_values(by='PubYear', ascending=True, inplace=True)
 chosenfunder_byjournaltitle.to_csv(f'data/{institution_name_nospaces}/{institution_name_nospaces}_yesyes_chosenfunder_groupbyjournaltitle.csv', index=False)
 
 fig12 = px.bar(chosenfunder_byjournaltitle, x='Source title', y='DOI', color='PubYear', text_auto='True',
-                     title=f'Top Journal Titles with Corresponding Author from {institution_name}<br>and Funding from {chosen_funder}',
+                     title=f'Top Journal Titles with Corresponding Author from {institution_name}<br>and Funding from {chosen_funder}, by Year',
                      category_orders={'PubYear': [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]})
 fig12.update_xaxes(categoryorder='total descending', maxallowed=maxallowed)
 fig12.update_layout(height=1000, showlegend=True, legend_traceorder='reversed')
 st.plotly_chart(fig12)
+
+
+
+chosenfunder_byjournal_and_OA = chosen_funder_DOIlevel.groupby(['Source title', 'PubYear', 'Open Access']).count().reset_index()[['Source title', 'PubYear', 'Open Access', 'DOI']]
+chosenfunder_byjournal_and_OA.sort_values(by='PubYear', ascending=True, inplace=True)
+chosenfunder_byjournal_and_OA.to_csv(f'data/{institution_name_nospaces}/{institution_name_nospaces}_yesyes_chosenfunder_groupbyjournal_and_OA.csv', index=False)
+
+fig14 = px.bar(chosenfunder_byjournal_and_OA, x='Source title', y='DOI', color='Open Access',
+            category_orders={'Open Access': ["Closed", "All OA; Gold", "All OA; Bronze", "All OA; Green", "All OA; Hybrid"]},
+            color_discrete_map={
+                "Closed": "#AB63FA",
+                "All OA; Gold": "gold",
+                "All OA; Bronze": "#636EFA",
+                "All OA; Green": "#2CA02C",
+                "All OA; Hybrid": "#EF553B"},
+            #pattern_shape='Open Access'
+           title = f'Top Journal Titles with Corresponding Author from {institution_name}<br>and Funding from {chosen_funder}, by Open Access status' )
+
+fig14.update_xaxes(categoryorder = 'total descending', maxallowed=maxallowed)
+fig14.update_layout(height=1000, showlegend=True, legend_traceorder='reversed')
+#fig13.update_traces(dict(marker_line_width=0))
+
+st.plotly_chart(fig14)
